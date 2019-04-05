@@ -1,0 +1,77 @@
+{
+  "heading": "Income",
+  "sections": [
+    {
+      "type": "RadioGroup",
+      "label": "Employment status",
+      "fields": [
+        {
+          "type": "radio",
+          "label": "Employed",
+          "name": "employed",
+          "fields": [
+            {
+              "type": "RadioGroup",
+              "label": "How are you employed",
+              "fields": [
+                {
+                  "type": "radio",
+                  "label": "Permanent",
+                  "value": "permanent",
+                  "fields": [
+                    {
+                      "type": "radio",
+                      "label": "Permanent 2",
+                      "value": "permanent"
+                    },
+                    {
+                      "type": "radio",
+                      "label": "Temporary 2",
+                      "value": "temporary"
+                    }
+                  ]
+                },
+                {
+                  "type": "radio",
+                  "label": "Temporary",
+                  "value": "temporary"
+                }
+              ]
+            },
+            {
+              "type": "RadioGroup",
+              "label": "Basic salary",
+              "fields": [
+                {
+                  "type": "radio",
+                  "label": "Permanent",
+                  "value": "permanent"
+                },
+                {
+                  "type": "radio",
+                  "label": "Temporary",
+                  "value": "temporary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "label": "Self-employed",
+          "name": "selfEmployed"
+        },
+        {
+          "type": "radio",
+          "label": "Retired",
+          "name": "retired"
+        },
+        {
+          "type": "radio",
+          "label": "Not working",
+          "name": "notWorking"
+        }
+      ]
+    }
+  ]
+}

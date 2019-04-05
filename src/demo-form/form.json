@@ -1,0 +1,110 @@
+{
+  "heading": "Income",
+  "sections": [
+    {
+      "type": "RadioGroup",
+      "id": "employmentStatus",
+      "label": "Employment status",
+      "fields": [
+        {
+          "type": "RadioOption",
+          "id": "employed",
+          "label": "Employed",
+          "fields": [
+            {
+              "type": "RadioGroup",
+              "id": "permanentStatus",
+              "label": "How are you employed?",
+              "fields": [
+                {
+                  "type": "RadioOption",
+                  "label": "Permanent",
+                  "id": "permanent"
+                },
+                {
+                  "type": "RadioOption",
+                  "label": "Temporary",
+                  "id": "temporary"
+                },
+                {
+                  "type": "RadioOption",
+                  "label": "Contractor",
+                  "id": "contractor"
+                }
+              ]
+            },
+            {
+              "type": "BooleanGroup",
+              "id": "moreThanTwoYears",
+              "label": "Worked more than two years in this job?",
+              "fields": [
+                {
+                  "type": "BooleanOption",
+                  "id": "yes",
+                  "label": "Yes"
+                },
+                {
+                  "type": "BooleanOption",
+                  "id": "no",
+                  "label": "No",
+                  "fields": [
+                    {
+                      "type": "PeriodInput",
+                      "id": "employmentLength",
+                      "label": "Length of employment"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "TextInput",
+              "id": "basicAnnualSalary",
+              "label": "Basic annual salary (before tax)",
+              "suffix": "£"
+            }
+          ]
+        },
+        {
+          "type": "RadioOption",
+          "id": "selfEmployed",
+          "label": "Self-employed"
+        },
+        {
+          "type": "RadioOption",
+          "id": "retired",
+          "label": "Retired"
+        },
+        {
+          "type": "RadioOption",
+          "id": "notWorking",
+          "label": "Not working",
+          "fields": [
+            {
+              "type": "RadioGroup",
+              "id": "notWorkingStatus",
+              "label": "How are you employed?",
+              "fields": [
+                {
+                  "type": "RadioOption",
+                  "label": "Homemaker",
+                  "id": "homemaker"
+                },
+                {
+                  "type": "RadioOption",
+                  "label": "Student",
+                  "id": "student"
+                },
+                {
+                  "type": "RadioOption",
+                  "label": "Unemployed",
+                  "id": "unemployed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

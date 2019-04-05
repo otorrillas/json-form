@@ -1,0 +1,50 @@
+[
+  {
+    "type": "MultiSelectGroup",
+    "id": "boc",
+    "label": "Bonus, commission or overtime?",
+    "fields": [
+      {
+        "type": "SelectOption",
+        "id": "bonus",
+        "label": "Bonus",
+        "fields": [
+          {
+            "type": "TextInput",
+            "prefix": "£",
+            "suffix": "per year"
+          }
+        ]
+      },
+      {
+        "type": "SelectOption",
+        "id": "commission",
+        "label": "Commission",
+        "fields": [
+          {
+            "type": "TextInput",
+            "prefix": "£",
+            "suffix": "per year"
+          }
+        ]
+      },
+      {
+        "type": "SelectOption",
+        "id": "overtime",
+        "label": "Overtime",
+        "fields": [
+          {
+            "type": "TextInput",
+            "prefix": "£",
+            "suffix": "per year"
+          }
+        ]
+      },
+      {
+        "type": "SelectOption",
+        "id": "none",
+        "label": "None"
+      }
+    ]
+  }
+]
